@@ -13,9 +13,7 @@ gem 'aws-sdk'
 gem 'figaro'
 gem 'simple_form'	
 gem 'friendly_id'
-
-
-
+gem 'nokogiri'
 
 group :doc do
   gem 'sdoc', require: false
