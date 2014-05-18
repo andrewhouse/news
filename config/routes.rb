@@ -1,6 +1,10 @@
 NewsScraper::Application.routes.draw do
   match 'articles/gizmodo', to: 'articles#gizmodo', via: :get
-  resources :articles 
+  match 'articles/cnet', to: 'articles#cnet', via: :get
+  match 'articles/cnn', to: 'articles#cnn', via: :get
+  match 'articles/bbc', to: 'articles#cnn', via: :get
+
+  resources :articles, only: :index
   root 'articles#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
